@@ -1,0 +1,45 @@
+{
+  "name": "solclout_assessment_server",
+  "version": "1.0.0",
+  "description": "A node server for transfering for transferring ETH using web3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sh3riff/SolClout_Assessment_Server.git"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "web3",
+    "ETH",
+    "Ethereum",
+    "javascript",
+    "nodejs"
+  ],
+  "author": {
+    "name": "Olowolagba Sheriff",
+    "email": "sh3riff101@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sh3riff/SolClout_Assessment_Server/issues"
+  },
+  "homepage": "https://github.com/Sh3riff/SolClout_Assessment_Server#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "swagger-ui-express": "^4.3.0",
+    "web3": "^1.7.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
+  }
+}

@@ -1,0 +1,61 @@
+openapi: 3.0.0
+info:
+  title: Solclout Assessmet Server
+  version: 1.0.0
+  description: The api server for the Solclout Node / web3js assessment
+  contact:
+    name: Solclout
+    url: https://www.solclout.com/
+    email: hello@solclout.com
+
+servers:
+  - url: http://localhost:5000
+    description: The address of the server on the local server
+
+
+paths:
+  # user routes
+  /transferETH:
+    post:
+      tags:
+        - Ethereum
+      summary: transfer Eth from the system to a customers address
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      requestBody:
+          required: true
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  receivingADDRESS: 
+                    type: string
+                    required: true
+                  amountToSendInETH:
+                    type: string
+                    required: true
+
+      responses:
+        200:
+          description: Transfer Successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message: 
+                    type: string
+                    default: transaction successful
+        400:
+          description: Transfer Failed
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message: 
+                    type: string
+                    default: specific error message
