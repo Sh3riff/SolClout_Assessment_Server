@@ -11,7 +11,7 @@ To run this project, create a .env file in the root folder & add the following e
 
 `EthNetworkChain` (your ethereum chain, defaults to **mainnet**)
 
-`EthNetworkHardfork` (your ethereum chain, defaults to **london**)
+`EthNetworkHardfork` (your ethereum hardfork, defaults to **london**)
 
 `EthWalletAddress` (The ethereum wallet address from which the server would send ethereum)
 
@@ -69,13 +69,13 @@ To run tests, run the following command
 | `receivingADDRESS` | `string` | **Required**. ETH address of the reciever |
 | `amountToSendInETH` | `string` | **Required**. Amount to send in ETH |
 
-#### Get item
+#### Server Documentation
 
 ```http
   GET /docs
 ```
 
-#### The swagger documentation is also available @ '/docs' of the server url
+#### The swagger documentation is also available @ '/docs' of the server url i.e [http://localhost:5000/docs](http://localhost:5000/docs) for local host running on port 5000
 
 
 
